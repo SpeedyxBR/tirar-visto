@@ -5,11 +5,11 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "../../components/ui/accordion";
-import { Badge } from "../../components/ui/bagde";
-import { Button } from "../../components/ui/button";
+} from "../../../../components/ui/accordion";
+import { Badge } from "../../../../components/ui/badge";
+import { Button } from "../../../../components/ui/button";
 
-const WhyChooseUsDetailsSection = () => {
+export const WhyChooseUsDetailsSection = (): JSX.Element => {
   // Data for accordion items
   const accordionItems = [
     {
@@ -92,7 +92,10 @@ const WhyChooseUsDetailsSection = () => {
                           {item.content}
                         </p>
                       ) : (
-                        <Button className="p-0 h-auto hover:bg-transparent">
+                        <Button
+                          variant="ghost"
+                          className="p-0 h-auto hover:bg-transparent"
+                        >
                           <PlusIcon className="w-6 h-6 mr-2" />
                           <span className="font-medium text-[#222223] text-base tracking-[-0.32px] leading-[20.9px] font-['Inter',Helvetica]">
                             Leia mais
@@ -110,5 +113,3 @@ const WhyChooseUsDetailsSection = () => {
     </section>
   );
 };
-
-export default WhyChooseUsDetailsSection;

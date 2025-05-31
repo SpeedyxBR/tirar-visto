@@ -1,9 +1,9 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import TirarVisto from "./TirarVisto";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { TirarVisto } from "./screens/TirarVisto";
 
-ReactDOM.createRoot(document.getElementById("app")!).render(
-  <React.StrictMode>
+createRoot(document.getElementById("app") as HTMLElement).render(
+  <StrictMode>
     <TirarVisto />
-  </React.StrictMode>
+  </StrictMode>,
 );

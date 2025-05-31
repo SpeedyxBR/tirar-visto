@@ -1,0 +1,1 @@
+export { TirarVisto } from "./TirarVisto";

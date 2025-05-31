@@ -4,7 +4,6 @@ import * as React from "react";
 
 import { cn } from "../../lib/utils";
 
-// Define as variantes de estilo e tamanho para o botão usando cva
 const buttonVariants = cva(
   "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
   {
@@ -32,20 +31,17 @@ const buttonVariants = cva(
       variant: "default",
       size: "default",
     },
-  }
+  },
 );
 
-// Tipagem das props do botão, incluindo variantes e possibilidade de usar como child
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
   asChild?: boolean;
 }
 
-// Componente Button principal, suporta forwardRef e variantes de estilo/tamanho
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant, size, asChild = false, ...props }, ref) => {
-    // Permite renderizar como outro componente se asChild for true
     const Comp = asChild ? Slot : "button";
     return (
       <Comp
@@ -54,9 +50,8 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         {...props}
       />
     );
-  }
+  },
 );
 Button.displayName = "Button";
 
-// Exporta o componente e as variantes
 export { Button, buttonVariants };
