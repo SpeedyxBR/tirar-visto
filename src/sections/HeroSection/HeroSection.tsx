@@ -1,9 +1,9 @@
 import { ArrowRightIcon } from "lucide-react";
 import React from "react";
-import { Button } from "../../../../components/ui/button";
-import { Card, CardContent } from "../../../../components/ui/card";
+import { Button } from "../../components/ui/button";
+import { Card, CardContent } from "../../components/ui/card";
 
-export const HeroSection = (): JSX.Element => {
+const HeroSection: React.FC = () => {
   // Navigation menu items
   const navItems = [
     { title: "Home", isBold: true },
@@ -54,7 +54,6 @@ export const HeroSection = (): JSX.Element => {
           {navItems.map((item, index) => (
             <Button
               key={index}
-              variant="ghost"
               className={`h-11 px-3 py-2.5 ${
                 item.isBold ? "font-bold" : "font-normal"
               } text-[#222223] text-base`}
@@ -143,3 +142,5 @@ export const HeroSection = (): JSX.Element => {
     </section>
   );
 };
+
+export default HeroSection;
