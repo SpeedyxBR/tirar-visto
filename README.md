@@ -96,8 +96,6 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull r
 
 ## 📄 Licença
 
-Este projeto está sob a licença MIT.
-
 ---
 
-Desenvolvido com 💙 por [Seu Nome ou Agência]
+Desenvolvido com 💙 por [Andrel - Dev Front]
