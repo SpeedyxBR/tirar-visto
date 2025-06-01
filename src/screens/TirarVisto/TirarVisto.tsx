@@ -1,20 +1,42 @@
 import React from "react";
-import { FooterSection } from "./sections/FooterSection/FooterSection";
+import { BenefitsSection } from "./sections/BenefitsSection";
+import { DestinationsSection } from "./sections/DestinationsSection/DestinationsSection";
+import { FooterSection } from "./sections/FooterSection";
 import { HeroSection } from "./sections/HeroSection/HeroSection";
-import { SpecialPackagesSection } from "./sections/SpecialPackagesSection";
-import { TopDestinationsSection } from "./sections/TopDestinationsSection";
-import { WhyChooseUsDetailsSection } from "./sections/WhyChooseUsDetailsSection";
-import { WhyChooseUsSection } from "./sections/WhyChooseUsSection/WhyChooseUsSection";
+import { MainContentSection } from "./sections/MainContentSection";
+import { PackagesSection } from "./sections/PackagesSection";
+import { WhyChooseUsSection } from "./sections/WhyChooseUsSection";
 
 export const TirarVisto = (): JSX.Element => {
   return (
-    <main className="flex flex-col w-full min-h-screen">
-      <HeroSection />
-      <WhyChooseUsSection />
-      <WhyChooseUsDetailsSection />
-      <TopDestinationsSection />
-      <SpecialPackagesSection />
-      <FooterSection />
+    <main className="flex flex-col w-full">
+      <section>
+        <HeroSection />
+      </section>
+
+      <section>
+        <MainContentSection />
+      </section>
+
+      <section>
+        <WhyChooseUsSection />
+      </section>
+
+      <section>
+        <BenefitsSection />
+      </section>
+
+      <section>
+        <DestinationsSection />
+      </section>
+
+      <section>
+        <PackagesSection />
+      </section>
+
+      <section>
+        <FooterSection />
+      </section>
     </main>
   );
 };

@@ -1,1 +1,0 @@
-export { TirarVisto } from "./TirarVisto";

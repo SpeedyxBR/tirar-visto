@@ -1,1 +1,0 @@
-export { WhyChooseUsDetailsSection } from "./WhyChooseUsDetailsSection";
