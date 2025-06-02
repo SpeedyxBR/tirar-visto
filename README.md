@@ -1,6 +1,6 @@
 # Tirar Visto
 
-Este projeto é uma landing page para consultoria de vistos, desenvolvida em React e estilizada com Tailwind CSS. O objetivo é oferecer uma experiência moderna, responsiva e intuitiva para quem deseja tirar o visto de forma simples e segura.
+Este projeto é uma landing page para consultoria de vistos, desenvolvida em React, TypeScript e estilizada com Tailwind CSS. O objetivo é oferecer uma experiência moderna, responsiva e intuitiva para quem deseja tirar o visto de forma simples e segura.
 
 ## ✨ Funcionalidades
 
@@ -13,7 +13,16 @@ Este projeto é uma landing page para consultoria de vistos, desenvolvida em Rea
 
 ## 🚀 Tecnologias Utilizadas
 
+<p align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width="36" height="36"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" width="36" height="36"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="Tailwind CSS" width="36" height="36"/>
+  <img src="https://vitejs.dev/logo.svg" alt="Vite" width="36" height="36"/>
+  <img src="https://lucide.dev/logo.svg" alt="Lucide Icons" width="36" height="36"/>
+</p>
+
 - [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Lucide React Icons](https://lucide.dev/)
 - [Vite](https://vitejs.dev/) (ou outro bundler, se aplicável)
@@ -45,12 +54,14 @@ public/
 ## 🖥️ Como rodar o projeto
 
 1. **Clone o repositório:**
+
    ```bash
    git clone https://github.com/seu-usuario/tirar-visto.git
    cd tirar-visto
    ```
 
 2. **Instale as dependências:**
+
    ```bash
    npm install
    # ou
@@ -58,6 +69,7 @@ public/
    ```
 
 3. **Inicie o servidor de desenvolvimento:**
+
    ```bash
    npm run dev
    # ou
