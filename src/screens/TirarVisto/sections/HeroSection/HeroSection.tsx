@@ -61,12 +61,7 @@ export const HeroSection = (): JSX.Element => {
         {/* Lado Esquerdo */}
         <div className="flex-1 flex flex-col w-full z-10">
           {/* Logo + Título */}
-          <div className="flex items-center gap-8 mb-6 mt-2">
-            <img
-              src="/logo-1.png"
-              alt="Logo Tirar Visto"
-              className="w-[70px] h-[70px] object-contain rounded-lg bg-white hidden md:block"
-            />
+          <div className="flex items-center mb-6 mt-2">
             <h1 className="text-3xl md:text-5xl font-bold text-[#222223] text-left font-['Inter',Helvetica]">
               Tire seu Visto conosco e não tenha nenhuma surpresa negativa!
             </h1>
