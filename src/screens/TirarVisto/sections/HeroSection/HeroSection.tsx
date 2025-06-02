@@ -80,7 +80,7 @@ export const HeroSection = (): JSX.Element => {
               Saiba mais
               <ArrowRightIcon className="w-5 h-5 text-white" />
             </Button>
-            <div className="flex items-center space-x-3">
+            <div className="flex flex-col items-center">
               <div className="relative w-[180px] h-[130px] rounded-xl overflow-hidden flex-shrink-0">
                 <img
                   src="/cleanshot-2025-05-08-at-14-28-22-2x.png"
@@ -91,20 +91,25 @@ export const HeroSection = (): JSX.Element => {
                   ATENDIMENTO
                 </span>
               </div>
-              <div className="flex flex-col justify-center flex-1 min-w-[120px] space-y-1">
+              {/* Frase Conheça a Bruna + Ver vídeo + seta */}
+              <div className="flex flex-col items-center mt-2 gap-1">
                 <span className="font-semibold text-[#222223] text-base md:text-lg">
                   Conheça a Bruna
                 </span>
-                <span className="text-sm text-gray-400">Ver vídeo</span>
-                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-[#0a0f2c] mt-2 transition hover:bg-[#263472] cursor-pointer group">
-                  <button
-                    type="button"
-                    aria-label="Assistir vídeo da Bruna"
-                    className="flex items-center justify-center w-full h-full focus:outline-none focus:ring-2 focus:ring-[#f6c010] group-hover:scale-110 transition-transform"
-                  >
-                    <ArrowRightIcon className="w-5 h-5 text-white transition-transform group-hover:translate-x-1" />
-                  </button>
-                </span>
+                <div className="flex items-center gap-2">
+                  <span className="text-sm text-gray-400">
+                    Ver vídeo da foto
+                  </span>
+                  <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#0a0f2c] transition hover:bg-[#263472] cursor-pointer group">
+                    <button
+                      type="button"
+                      aria-label="Assistir vídeo da Bruna"
+                      className="flex items-center justify-center w-full h-full focus:outline-none focus:ring-2 focus:ring-[#f6c010] group-hover:scale-110 transition-transform"
+                    >
+                      <ArrowRightIcon className="w-4 h-4 text-white transition-transform group-hover:translate-x-1" />
+                    </button>
+                  </span>
+                </div>
               </div>
             </div>
           </div>
@@ -129,7 +134,7 @@ export const HeroSection = (): JSX.Element => {
         {/* Lado Direito */}
         <div className="flex-1 w-full flex items-start justify-center mt-10 lg:mt-0">
           <div
-            className="relative w-full max-w-[1000px] h-[350px] md:aspect-[16/9] md:min-h-[700px] rounded-3xl overflow-hidden bg-cover bg-center flex flex-col justify-between"
+            className="relative w-full max-w-[1000px] h-[500px] md:aspect-[16/9] md:min-h-[950px] rounded-3xl overflow-hidden bg-cover bg-center flex flex-col justify-between"
             style={{ backgroundImage: "url('/frame-36920.png')" }}
           >
             {/* Botão no topo direito */}
