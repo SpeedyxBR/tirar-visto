@@ -13,11 +13,7 @@ export const TirarVisto = (): JSX.Element => {
       <section>
         <HeroSection />
       </section>
-
-      <section>
-        <MainContentSection />
-      </section>
-
+      
       <section>
         <WhyChooseUsSection />
       </section>
