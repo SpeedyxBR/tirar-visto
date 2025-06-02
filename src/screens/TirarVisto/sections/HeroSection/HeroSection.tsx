@@ -101,8 +101,14 @@ export const HeroSection = (): JSX.Element => {
                   Conheça a Bruna
                 </span>
                 <span className="text-sm text-gray-400">Ver vídeo</span>
-                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-[#0a0f2c] mt-2">
-                  <ArrowRightIcon className="w-5 h-5 text-white" />
+                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-[#0a0f2c] mt-2 transition hover:bg-[#263472] cursor-pointer group">
+                  <button
+                    type="button"
+                    aria-label="Assistir vídeo da Bruna"
+                    className="flex items-center justify-center w-full h-full focus:outline-none focus:ring-2 focus:ring-[#f6c010] group-hover:scale-110 transition-transform"
+                  >
+                    <ArrowRightIcon className="w-5 h-5 text-white transition-transform group-hover:translate-x-1" />
+                  </button>
                 </span>
               </div>
             </div>
